@@ -19,11 +19,11 @@ function getModel(markType: any) {
   model.component.selection = parseUnitSelection(model, [
     {
       name: 'one',
-      select: {type: 'single', nearest: true}
+      select: {type: 'point', nearest: true}
     },
     {
       name: 'two',
-      select: {type: 'multi', nearest: true}
+      select: {type: 'point', nearest: true}
     },
     {
       name: 'three',
@@ -31,35 +31,35 @@ function getModel(markType: any) {
     },
     {
       name: 'four',
-      select: {type: 'single', nearest: false}
+      select: {type: 'point', nearest: false}
     },
     {
       name: 'five',
-      select: {type: 'multi'}
+      select: {type: 'point'}
     },
     {
       name: 'six',
-      select: {type: 'multi', nearest: null}
+      select: {type: 'point', nearest: null}
     },
     {
       name: 'seven',
-      select: {type: 'single', nearest: true, encodings: ['x']}
+      select: {type: 'point', nearest: true, encodings: ['x']}
     },
     {
       name: 'eight',
-      select: {type: 'single', nearest: true, encodings: ['y']}
+      select: {type: 'point', nearest: true, encodings: ['y']}
     },
     {
       name: 'nine',
-      select: {type: 'single', nearest: true, encodings: ['color']}
+      select: {type: 'point', nearest: true, encodings: ['color']}
     },
     {
       name: 'ten',
-      select: {type: 'single', nearest: true, on: 'mouseover'}
+      select: {type: 'point', nearest: true, on: 'mouseover'}
     },
     {
       name: 'eleven',
-      select: {type: 'multi', nearest: true, on: 'mouseover, dblclick'}
+      select: {type: 'point', nearest: true, on: 'mouseover, dblclick'}
     }
   ]);
   model.parseMarkGroup();
