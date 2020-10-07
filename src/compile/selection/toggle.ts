@@ -5,7 +5,7 @@ export const TOGGLE = '_toggle';
 
 const toggle: SelectionCompiler = {
   defined: selCmpt => {
-    return selCmpt.type === 'multi' && !!selCmpt.toggle;
+    return selCmpt.type === 'point' && !!selCmpt.toggle;
   },
 
   signals: (model, selCmpt, signals) => {
